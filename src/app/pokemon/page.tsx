@@ -51,5 +51,7 @@ export default function Page() {
       <h1>Pokemon Page</h1>
       <DisplayPokemonList />
     </>
+    
   );
+  
 }
