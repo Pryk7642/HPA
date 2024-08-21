@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { stat } from "fs";
+import Link from "next/link";
+
 
 export default function Page() {
   const { name} = useParams<{ name: string}>();
@@ -20,6 +22,7 @@ export default function Page() {
 
   return (
     <div>
+      <h5><Link href="/pokemon">Back</Link></h5>
       <h1>{pokemon.name}</h1>
       <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       <h2>Details</h2>

@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div>
           <h1>Navigation Bar<br></br>
-          <Link href="/">Home Page</Link>
+          <Link href="/">Home</Link>
           {" - "}
           <Link href="/pokemon">Pokemon</Link>
           {" - "}

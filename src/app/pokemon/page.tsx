@@ -48,7 +48,7 @@ export default function Page() {
 
   return (
     <>
-      <h1>Pokemon</h1>
+      <h1>Pokemon Page</h1>
       <DisplayPokemonList />
     </>
   );
