@@ -19,12 +19,12 @@ export default function Page() {
   }, [name]);
 
   if (!pokemon) return <p>Loading...</p>;
-
+//<img src={pokemon.sprites.front_default} alt={pokemon.name} />
   return (
     <div>
       <h2><Link href="/pokemon">← Back</Link></h2>
       <h1>{pokemon.name}</h1>
-      <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+      
       <h2>Details</h2>
       <p>Height: {pokemon.height}</p>
       <p>Weight: {pokemon.weight}</p>
