@@ -5,6 +5,7 @@ export default function Page() {
         <h2>ชื่อ: นายพิริยกร พันธุ์พานิชย์</h2>
         <h2>รหัสนักศึกษา: 653450098-0</h2>
         <h2>ชั้นปี: ปี3</h2>
+        <center>CIS</center>
       </div>
     );
   }  

@@ -22,7 +22,7 @@ export default function Page() {
 
   return (
     <div>
-      <h5><Link href="/pokemon">Back</Link></h5>
+      <h2><Link href="/pokemon">← Back</Link></h2>
       <h1>{pokemon.name}</h1>
       <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       <h2>Details</h2>
@@ -36,6 +36,7 @@ export default function Page() {
 
       <h2>Moves</h2>
       <ul> {pokemon.moves.map((move: any) => (<p key={move.move.name}>{move.move.name}</p>))}</ul>
+      
     </div>
   );
 
