@@ -8,7 +8,7 @@ export default function Home() {
       <h1>Home Page</h1>
       <h2>67/IN403101 : Front-end Web Programming</h2>
       <h2>Work NEXTJS</h2>
-      <center>CIS</center>
+      <center>CIS 3 CIS</center>
     </div>
   );
 }
