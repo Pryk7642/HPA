@@ -1,8 +1,6 @@
-
 "use client";
 import Link from "next/link";
-import React, { JSXElementConstructor } from "react";
-
+import React from "react";
 
 interface PokemonList {
   count: number;
@@ -36,10 +34,10 @@ export default function Page() {
     if (pokemonData && pokemonData.results)
       return (
         <ul>
-          {pokemonData.results.map((p) => (
-            <ul>
+          {pokemonData.results.map((p, index) => (
+            <li key={index}>
               <Link href={"/pokemon/" + p.name}>{p.name}</Link>
-            </ul>
+            </li>
           ))}
         </ul>
       );
@@ -51,7 +49,5 @@ export default function Page() {
       <h1>Pokemon Page</h1>
       <DisplayPokemonList />
     </>
-    
   );
-  
 }

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { stat } from "fs";
 import Link from "next/link";
+import Image from 'next/image';
 
 
 export default function Page() {
@@ -25,6 +26,7 @@ export default function Page() {
       <h2><Link href="/pokemon">← Back</Link></h2>
       <h1>{pokemon.name}</h1>
       <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+      
       <h2>Details</h2>
       <p>Height: {pokemon.height}</p>
       <p>Weight: {pokemon.weight}</p>
